@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/huenhu/work-study-personal/Study/College-CKC/HK6/2_TTTN/pixelcent/SRC/AwayDigitalHome/assets)",
+      "Bash(curl -s -o logo-header.png \"https://www.figma.com/api/mcp/asset/ffb56191-fdbe-4915-943f-7b2185b63411\")",
+      "Bash(curl -s -o logo-footer.png \"https://www.figma.com/api/mcp/asset/3d8c8d6c-1690-4330-878c-ce3b59f4bd9f\")",
+      "Bash(curl -s -o slide-1.jpg \"https://www.figma.com/api/mcp/asset/d1dd4192-894c-44a0-abd9-bd8782744b80\")",
+      "Bash(curl -s -o slide-2.jpg \"https://www.figma.com/api/mcp/asset/19299f9e-7e51-4987-86ab-aabd7704349c\")",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(php -S localhost:8090)",
+      "Bash(echo \"PHP server PID: $!\")",
+      "Bash(curl -s -o /dev/null -w \"HTTP Status: %{http_code}\\\\n\" http://localhost:8090/index.php)"
+    ]
+  }
+}
