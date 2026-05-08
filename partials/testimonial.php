@@ -5,7 +5,8 @@
 
 		<div class="testimonial__video-wrap">
 			<div class="testimonial__video-placeholder" id="testimonial-placeholder">
-				<!-- Play button first → label text renders on top via z-index -->
+				<!-- Label behind, button on top -->
+				<p class="testimonial__video-label">Shape Homes's<br>Testimonial video</p>
 				<button class="testimonial__play-btn" id="testimonial-play-btn"
 					aria-label="Play Shape Homes testimonial video">
 					<svg class="testimonial__play-icon-svg" xmlns="http://www.w3.org/2000/svg" width="128" height="128"
@@ -18,8 +19,6 @@
 							fill="#303030" />
 					</svg>
 				</button>
-				<!-- Label renders after → sits in front of play button -->
-				<p class="testimonial__video-label">Shape Homes's<br>Testimonial video</p>
 			</div>
 			<video class="testimonial__video" id="testimonial-video" controls>
 				<source src="assets/videos/rectangle-741.mp4" type="video/mp4" />

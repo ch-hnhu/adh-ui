@@ -726,7 +726,7 @@ button {
 	pointer-events: none;
 	user-select: none;
 	position: relative;
-	z-index: 2; /* label sits in front of play button */
+	z-index: 1; /* label sits behind play button */
 }
 
 .testimonial__play-btn {
@@ -734,13 +734,13 @@ button {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 96px;
-	height: 96px;
+	width: 128px;
+	height: 128px;
 	background: none;
 	border: none;
 	padding: 0;
 	cursor: pointer;
-	z-index: 1; /* behind label text */
+	z-index: 2; /* on top of label text */
 	transition: transform 0.2s ease;
 }
 .testimonial__play-btn:hover {
@@ -748,23 +748,17 @@ button {
 }
 
 .testimonial__play-icon-svg {
-	width: 96px;
-	height: 96px;
+	width: 128px;
+	height: 128px;
 	display: block;
 }
 
-/* SVG fill transitions on hover */
+/* Hover: circle becomes solid white, triangle stays dark */
 .testimonial__play-circle {
 	transition: fill-opacity 0.3s ease;
 }
-.testimonial__play-triangle {
-	transition: fill 0.3s ease;
-}
 .testimonial__play-btn:hover .testimonial__play-circle {
-	fill-opacity: 0.45;
-}
-.testimonial__play-btn:hover .testimonial__play-triangle {
-	fill: white;
+	fill-opacity: 1;
 }
 
 /* Actual video — hidden until play is clicked */
