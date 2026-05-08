@@ -12,9 +12,9 @@
 				<p class="homebuyer-features__body">Every design lives in one connected platform - keeping visuals, materials and pricing consistent, accurate and always up to date.</p>
 			</div>
 			<div class="homebuyer-features__intro-image">
-				<video class="homebuyer-features__video" autoplay muted loop playsinline>
-					<source src="assets/videos/rectangle-741.mp4" type="video/mp4" />
-				</video>
+				<img src="assets/images/Rectangle 741.png"
+					alt="Away Digital Home — material selection interface"
+					class="homebuyer-features__img" />
 			</div>
 		</div>
 

@@ -1,7 +1,7 @@
 <!-- Section: Sister Company / About ADH Origin (gray bg) -->
 <section class="sister-co" id="about">
 	<div class="sister-co__image-wrap">
-		<img src="assets/images/Rectangle 724.png"
+		<img src="assets/images/Rectangle 740.png"
 			alt="Away Digital Home — photorealistic interior visualization"
 			class="sister-co__img" />
 		<div class="sister-co__gradient"></div>

@@ -1265,6 +1265,43 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 ============================================================ */
 
 /* ----------------------------------------------------------
+   ABOUT HERO  (white bg | h 836px | px 148px | py 80px)
+   Large interior image centered in white frame
+---------------------------------------------------------- */
+.about-hero {
+  background-color: var(--color-white);
+  height: 836px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 148px;
+}
+
+.about-hero__image-wrap {
+  flex: 1 0 0;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .about-hero { height: 560px; padding: 40px; }
+}
+
+@media (max-width: 768px) {
+  .about-hero { height: 320px; padding: 20px; }
+}
+
+/* ----------------------------------------------------------
    ADH INTRO  (white bg | pb 80px | px 150px)
    "Away Digital Home is an interactive 3D platform..."
 ---------------------------------------------------------- */
@@ -1534,10 +1571,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
 }
 
-.homebuyer-features__video {
+.homebuyer-features__video,
+.homebuyer-features__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 

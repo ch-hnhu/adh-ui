@@ -12,14 +12,14 @@
 	<?php include 'partials/header.php'; ?>
 
 	<main>
-		<?php include 'includes/feature/hero.php'; ?>
+		<?php include 'includes/about/hero.php'; ?>
 		<?php include 'includes/about/adh_intro.php'; ?>
 		<?php include 'includes/about/sister_company.php'; ?>
 		<?php include 'includes/about/built_for_teams.php'; ?>
 		<?php include 'includes/about/homebuyer_features.php'; ?>
 		<?php include 'partials/testimonial.php'; ?>
 		<?php include 'partials/cta.php'; ?>
-		<?php include 'includes/about/faq.php'; ?>
+		<?php include 'partials/faq.php'; ?>
 	</main>
 
 	<?php include 'partials/footer.php'; ?>

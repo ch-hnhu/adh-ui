@@ -14,7 +14,7 @@
 
 		<div class="built-for-teams__content">
 			<div class="built-for-teams__image-side">
-				<img src="assets/images/Office_01.08K-standard-width-7680px.png"
+				<img src="assets/images/Rectangle 746.png"
 					alt="Away Digital Home — homebuilder team collaboration"
 					class="built-for-teams__img" />
 			</div>
