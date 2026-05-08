@@ -5,15 +5,21 @@
 
 		<div class="testimonial__video-wrap">
 			<div class="testimonial__video-placeholder" id="testimonial-placeholder">
-				<p class="testimonial__video-label">Shape Homes's<br>Testimonial video</p>
+				<!-- Play button first → label text renders on top via z-index -->
 				<button class="testimonial__play-btn" id="testimonial-play-btn"
 					aria-label="Play Shape Homes testimonial video">
-					<svg class="testimonial__play-icon-svg" viewBox="0 0 40 40" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<circle cx="20" cy="20" r="19" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" />
-						<path d="M16 13.5L28 20L16 26.5V13.5Z" fill="rgba(255,255,255,0.65)" />
+					<svg class="testimonial__play-icon-svg" xmlns="http://www.w3.org/2000/svg" width="128" height="128"
+						viewBox="0 0 128 128" fill="none">
+						<path class="testimonial__play-circle" fill-rule="evenodd" clip-rule="evenodd"
+							d="M112 64C112 90.512 90.512 112 64 112C37.488 112 16 90.512 16 64C16 37.488 37.488 16 64 16C90.512 16 112 37.488 112 64Z"
+							fill="white" fill-opacity="0.2" />
+						<path class="testimonial__play-triangle" fill-rule="evenodd" clip-rule="evenodd"
+							d="M58.352 48.3097L79.056 60.555C81.6747 62.1017 81.6747 65.8937 79.056 67.4404L58.352 79.6857C55.6854 81.2644 52.3147 79.339 52.3147 76.2404V51.755C52.3147 48.6564 55.6854 46.731 58.352 48.3097Z"
+							fill="#303030" />
 					</svg>
 				</button>
+				<!-- Label renders after → sits in front of play button -->
+				<p class="testimonial__video-label">Shape Homes's<br>Testimonial video</p>
 			</div>
 			<video class="testimonial__video" id="testimonial-video" controls>
 				<source src="assets/videos/rectangle-741.mp4" type="video/mp4" />
