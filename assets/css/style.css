@@ -1258,3 +1258,369 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer__bottom { width: 100%; }
   .footer__copyright { text-align: center; }
 }
+
+/* ============================================================
+   ABOUT PAGE SECTIONS
+   Blocks below apply only to about.php
+============================================================ */
+
+/* ----------------------------------------------------------
+   ADH INTRO  (white bg | pb 80px | px 150px)
+   "Away Digital Home is an interactive 3D platform..."
+---------------------------------------------------------- */
+.adh-intro {
+  background-color: var(--color-white);
+  padding: 0 var(--section-px) var(--section-py);
+}
+
+.adh-intro__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.adh-intro__heading-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.adh-intro__heading {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  line-height: var(--lh-2xl);
+  letter-spacing: -0.2px;
+  color: var(--color-text-dark);
+  text-align: center;
+  max-width: 818px;
+}
+
+.adh-intro__content {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  height: 344px;
+}
+
+.adh-intro__image-side {
+  flex: 1 0 0;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.adh-intro__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.adh-intro__copy {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.adh-intro__body {
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-md);
+  color: var(--color-text-dark);
+  letter-spacing: 0;
+}
+
+/* ----------------------------------------------------------
+   SISTER COMPANY  (gray bg | pb 80px)
+   Full-width image + gradient + 2-col text
+---------------------------------------------------------- */
+.sister-co {
+  background-color: var(--color-bg-gray);
+  padding-bottom: var(--section-py);
+}
+
+.sister-co__image-wrap {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.sister-co__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.sister-co__gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(243, 244, 246, 0) 9.857%,
+    #f3f4f6 97.857%
+  );
+}
+
+.sister-co__copy {
+  display: flex;
+  gap: 32px;
+  padding: 64px var(--section-px) 0;
+  max-width: calc(var(--container-max) + var(--section-px) * 2);
+  margin: 0 auto;
+}
+
+.sister-co__col {
+  flex: 1 0 0;
+  min-width: 0;
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-md);
+  color: var(--color-text-dark);
+  letter-spacing: 0;
+}
+
+/* ----------------------------------------------------------
+   BUILT FOR TEAMS  (white bg | px 150px | py 80px)
+   "Built for the realities of modern homebuilding"
+---------------------------------------------------------- */
+.built-for-teams {
+  background-color: var(--color-white);
+  padding: var(--section-py) var(--section-px);
+}
+
+.built-for-teams__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.built-for-teams__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  max-width: 892px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.built-for-teams__heading {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  line-height: var(--lh-2xl);
+  letter-spacing: -0.2px;
+  color: var(--color-text-dark);
+}
+
+.built-for-teams__subtext {
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-sm);
+  color: var(--color-text-dark);
+}
+
+.built-for-teams__subtext p { line-height: 24px; }
+
+.built-for-teams__content {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.built-for-teams__image-side {
+  flex: 1 0 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.built-for-teams__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.built-for-teams__cards {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.team-card {
+  background-color: var(--color-card-bg);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.team-card__title {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  line-height: var(--lh-md);
+  color: var(--color-primary);
+}
+
+.team-card__body {
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-md);
+  color: var(--color-text-muted);
+}
+
+/* ----------------------------------------------------------
+   HOMEBUYER FEATURES  (white bg | px 150px | py 80px)
+   "Help homebuyers understand every design choice early"
+---------------------------------------------------------- */
+.homebuyer-features {
+  background-color: var(--color-white);
+  padding: var(--section-py) var(--section-px);
+}
+
+.homebuyer-features__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.homebuyer-features__intro {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  height: 352px;
+}
+
+.homebuyer-features__intro-copy {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.homebuyer-features__heading {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  line-height: var(--lh-2xl);
+  letter-spacing: -0.2px;
+  color: var(--color-text-dark);
+}
+
+.homebuyer-features__body {
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-text-dark);
+}
+
+.homebuyer-features__intro-image {
+  flex: 1 0 0;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.homebuyer-features__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 2 rows × 3 columns feature grid */
+.homebuyer-features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.hf-card {
+  background-color: var(--color-card-bg);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hf-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hf-card__icon-wrap {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.hf-card__icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0);
+}
+
+.hf-card__title {
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  line-height: var(--lh-lg);
+  color: var(--color-text-dark);
+}
+
+.hf-card__body {
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-md);
+  color: var(--color-text-muted);
+}
+
+/* ----------------------------------------------------------
+   ABOUT PAGE RESPONSIVE — TABLET (≤ 1024px)
+---------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .adh-intro__content { flex-direction: column; height: auto; gap: 32px; }
+  .adh-intro__image-side { width: 100%; height: 260px; flex: none; }
+
+  .sister-co__image-wrap { height: 420px; }
+  .sister-co__copy { flex-direction: column; gap: 24px; padding-top: 40px; }
+
+  .built-for-teams__content { flex-direction: column; }
+  .built-for-teams__image-side { width: 100%; height: 280px; }
+
+  .homebuyer-features__intro { flex-direction: column; height: auto; gap: 32px; }
+  .homebuyer-features__intro-image { width: 100%; height: 260px; flex: none; }
+  .homebuyer-features__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ----------------------------------------------------------
+   ABOUT PAGE RESPONSIVE — MOBILE (≤ 768px)
+---------------------------------------------------------- */
+@media (max-width: 768px) {
+  .adh-intro__heading { font-size: 26px; line-height: 34px; }
+  .adh-intro__image-side { height: 200px; }
+
+  .sister-co__image-wrap { height: 280px; }
+
+  .built-for-teams__heading { font-size: 26px; line-height: 34px; }
+  .built-for-teams__image-side { height: 220px; }
+
+  .homebuyer-features__heading { font-size: 26px; line-height: 34px; }
+  .homebuyer-features__grid { grid-template-columns: 1fr; }
+  .homebuyer-features__intro-image { height: 220px; }
+}
