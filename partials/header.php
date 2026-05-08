@@ -1,6 +1,6 @@
 <header class="header">
 	<div class="header__container">
-		<a href="#" class="header__logo">
+		<a href="index.php" class="header__logo">
 			<img src="assets/icons/Color=Dark 1.svg" alt="Away Digital Home" class="header__logo-img" />
 		</a>
 

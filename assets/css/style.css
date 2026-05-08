@@ -1734,19 +1734,21 @@ button {
 	padding: 40px 30px;
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	gap: 24px;
+	align-self: stretch;
 	position: relative;
 	overflow: hidden;
 }
 
 /* Gradient overlay fades in on hover — only way to animate solid→gradient */
 .team-card::before {
-	content: '';
+	content: "";
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(270deg, #1542ff 5.01%, #0d2899 97.05%);
 	opacity: 0;
-	transition: opacity 0.35s ease;
+	transition: opacity 1s ease;
 }
 
 .team-card:hover::before {
