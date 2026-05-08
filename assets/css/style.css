@@ -726,7 +726,7 @@ button {
 	pointer-events: none;
 	user-select: none;
 	position: relative;
-	z-index: 1; /* label sits behind play button */
+	z-index: 2; /* label sits behind play button */
 }
 
 .testimonial__play-btn {
@@ -740,11 +740,8 @@ button {
 	border: none;
 	padding: 0;
 	cursor: pointer;
-	z-index: 2; /* on top of label text */
+	z-index: 1; /* on top of label text */
 	transition: transform 0.2s ease;
-}
-.testimonial__play-btn:hover {
-	transform: translate(-50%, -50%) scale(1.08);
 }
 
 .testimonial__play-icon-svg {
