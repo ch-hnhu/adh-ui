@@ -16,7 +16,7 @@
 				<ul class="nav__list">
 					<li class="nav__item"><a href="#how-it-works" class="nav__link">How It Works</a></li>
 					<li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
-					<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="about.php" class="nav__link">About</a></li>
 					<li class="nav__item"><a href="#insights" class="nav__link">Insights</a></li>
 				</ul>
 				<a href="#contact" class="btn btn--primary nav__cta">Contact us</a>

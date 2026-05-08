@@ -9,21 +9,21 @@
 </head>
 
 <body>
-	<?php include 'includes/header.php'; ?>
+	<?php include 'partials/header.php'; ?>
 
 	<main>
-		<?php include 'includes/hero.php'; ?>
-		<?php include 'includes/feature_home_buyer.php'; ?>
-		<?php include 'includes/feature_team.php'; ?>
-		<?php include 'includes/slideshow.php'; ?>
-		<?php include 'includes/why_adh.php'; ?>
-		<?php include 'includes/platform_features.php'; ?>
-		<?php include 'includes/testimonial.php'; ?>
-		<?php include 'includes/cta.php'; ?>
-		<?php include 'includes/faq.php'; ?>
+		<?php include 'includes/feature/hero.php'; ?>
+		<?php include 'includes/feature/feature_home_buyer.php'; ?>
+		<?php include 'includes/feature/feature_team.php'; ?>
+		<?php include 'includes/feature/slideshow.php'; ?>
+		<?php include 'includes/feature/why_adh.php'; ?>
+		<?php include 'includes/feature/platform_features.php'; ?>
+		<?php include 'partials/testimonial.php'; ?>
+		<?php include 'partials/cta.php'; ?>
+		<?php include 'partials/faq.php'; ?>
 	</main>
 
-	<?php include 'includes/footer.php'; ?>
+	<?php include 'partials/footer.php'; ?>
 
 	<script src="assets/js/main.js"></script>
 </body>
