@@ -1285,7 +1285,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
 }
 
-.about-hero__img {
+.about-hero__img,
+.about-hero__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
