@@ -1,0 +1,93 @@
+.platform-section {
+  width: 1440px;
+  min-height: 1682px;
+  margin: 0 auto;
+  padding-top: 80px;
+  background: #f3f4f6;
+}
+
+.platform-copy {
+  display: flex;
+  justify-content: center;
+}
+
+.platform-heading-wrap {
+  width: 740px;
+  min-height: 216px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.platform-title {
+  width: 526px;
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #262626;
+}
+
+.platform-intro {
+  width: 740px;
+  height: 96px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #262626;
+}
+
+.platform-rows {
+  width: 1440px;
+  min-height: 1322px;
+  margin-top: 64px;
+  padding: 0 150px 80px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.platform-row {
+  width: 1140px;
+  height: 398px;
+  display: flex;
+  gap: 10px;
+  background: #fff;
+}
+
+.platform-row-image,
+.platform-row-content {
+  width: 565px;
+  height: 398px;
+}
+
+.platform-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.platform-row-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.platform-row-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  color: #262626;
+}
+
+.platform-row-body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #a8a8a8;
+}
+.text-primary-blue {
+    color: #1542ff; 
+}

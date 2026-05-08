@@ -1,0 +1,9 @@
+<?php include __DIR__ . '/../sections/hero.php'; ?>
+<?php include __DIR__ . '/../sections/features.php'; ?>
+<?php include __DIR__ . '/../sections/workflow.php'; ?>
+<?php include __DIR__ . '/../sections/carousel.php'; ?>
+<?php include __DIR__ . '/../sections/why-choose.php'; ?>
+<?php include __DIR__ . '/../sections/platform-features.php'; ?>
+<?php include __DIR__ . '/../sections/testimonial.php'; ?>
+<?php include __DIR__ . '/../sections/contact-form.php'; ?>
+<?php include __DIR__ . '/../sections/faq.php'; ?>

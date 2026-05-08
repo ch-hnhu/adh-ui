@@ -1,0 +1,68 @@
+.workflow-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.workflow-hero {
+  min-height: 352px;
+}
+
+.workflow-copy {
+  width: 557px;
+}
+
+.workflow-title {
+  width: 435px;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+}
+
+.workflow-intro {
+  width: 435px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.workflow-media {
+  width: 557px;
+  height: 352px;
+}
+
+.workflow-card {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 40px 30px;
+  min-height: 316px;
+}
+
+.workflow-card-title {
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 8px;
+}
+
+.workflow-card-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.workflow-card-body {
+  font-size: 19px;
+  line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+  .workflow-copy,
+  .workflow-media,
+  .workflow-title,
+  .workflow-intro {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .workflow-card {
+    min-height: auto;
+  }
+}

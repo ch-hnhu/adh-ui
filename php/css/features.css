@@ -1,0 +1,70 @@
+.features-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.features-hero {
+  min-height: 352px;
+}
+
+.features-copy {
+  width: 557px;
+}
+
+.features-title {
+  width: 435px;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+}
+
+.features-intro {
+  width: 435px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.features-media {
+  width: 558px;
+  height: 352px;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.features-card {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 40px 30px;
+  min-height: 260px;
+}
+
+.features-card-title {
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 8px;
+}
+
+.features-card-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.features-card-body {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+  .features-copy,
+  .features-media,
+  .features-title,
+  .features-intro {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-card {
+    min-height: auto;
+  }
+}

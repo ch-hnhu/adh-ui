@@ -1,0 +1,229 @@
+:root {
+  /* Colors */
+  --color-primary:      #1542ff;
+  --color-text-dark:    #262626;
+  --color-text-light:   #f3f4f6;
+  --color-text-muted:   #a8a8a8;
+  --color-bg-gray:      #f3f4f6;
+  --color-bg-dark:      #303030;
+  --color-border:       #787878;
+  --color-border-light: #ccced0;
+  --color-required:     #fe2c55;
+  --color-card-bg:      rgba(0, 0, 0, 0.05);
+  --color-white:        #ffffff;
+
+  /* Typography */
+  --font-family: 'Aeonik Pro', system-ui, -apple-system, sans-serif;
+
+  /* Font sizes */
+  --fs-sm:   16px;
+  --fs-md:   18px;
+  --fs-lg:   20px;
+  --fs-xl:   24px;
+  --fs-2xl:  28px;
+  --fs-3xl:  36px;
+  --fs-4xl:  60px;
+
+  /* Line heights */
+  --lh-sm:   24px;
+  --lh-md:   28px;
+  --lh-lg:   30px;
+  --lh-xl:   34px;
+  --lh-2xl:  48px;
+  --lh-3xl:  72px;
+
+  /* Layout */
+  --container-max:  1140px;
+  --section-px:     150px;
+  --section-py:     80px;
+  --card-gap:       24px;
+
+  /* Slideshow */
+  --slide-w: 752px;
+  --slide-h: 441px;
+  --slide-gap: 64px;
+  --slide-step: calc(var(--slide-w) + var(--slide-gap));   /* 816px per step */
+  --slide-offset: calc(50% - var(--slide-w) / 2);          /* centers first slide */
+}
+
+.footer {
+  background-color: var(--color-white);
+  padding: 64px 150px;
+}
+
+
+.footer__container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.footer__logo-img {
+  height: 51px;
+  width: auto;
+  display: block;
+}
+
+/* Back to top */
+.footer__back-to-top {
+   width: 46px;
+  height: 46px;
+  border: 1px solid #000000;
+  border-radius: 9999px ; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(6px);
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.footer__back-to-top:hover {
+    background-color: var(--color-bg-gray);
+  transform: translateY(-2px);
+}
+
+.footer__arrow-up-icon {
+  width: 11px;
+  height: 21px;
+  display: block;
+  object-fit: contain;
+}
+
+/* ============================================================
+   CENTER
+============================================================ */
+.footer__center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 80px;
+  padding: 32px 0;
+  
+  border-bottom: 1px solid var(--color-border);
+}
+/* Left block */
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Nav */
+.footer__nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 40px;
+  row-gap: 24px;
+}
+.footer__nav-link {
+  font-size: var(--fs-md);
+  font-weight: 700;
+  line-height: var(--lh-md);
+  color: var(--color-text-dark);
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.footer__nav-link:hover {
+  color: var(--color-primary);
+}
+
+/* Social */
+.footer__socials {
+  display: flex;
+  gap: 20px;
+}
+.footer__social-link {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-bg-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.footer__social-link:hover {
+  opacity: 0.7;
+}
+
+.footer__social-icon {
+  max-width: 20px;
+  max-height: 20px;
+  object-fit: contain;
+}
+
+
+.footer__offices {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.footer__office {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 183px;
+}
+
+.footer__office-country {
+  font-size: var(--fs-md);
+  font-weight: 700;
+  line-height: var(--lh-md);
+  text-transform: uppercase;
+}
+
+.footer__office-address {
+  font-size: var(--fs-md);
+  font-weight: 400;
+  line-height: var(--lh-md);
+}
+
+/* ============================================================
+   BOTTOM
+============================================================ */
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.footer__copyright,
+.footer__privacy {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  text-align: center;
+}
+
+.footer__privacy-link {
+  color: var(--color-text-dark);
+  transition: color 0.2s ease;
+}
+
+.footer__privacy-link:hover {
+  color: var(--color-primary);
+}
