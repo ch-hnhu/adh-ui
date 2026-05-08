@@ -9,7 +9,15 @@
       "mcp__Claude_in_Chrome__tabs_context_mcp",
       "Bash(php -S localhost:8090)",
       "Bash(echo \"PHP server PID: $!\")",
-      "Bash(curl -s -o /dev/null -w \"HTTP Status: %{http_code}\\\\n\" http://localhost:8090/index.php)"
+      "Bash(curl -s -o /dev/null -w \"HTTP Status: %{http_code}\\\\n\" http://localhost:8090/index.php)",
+      "mcp__f557a916-c451-4b50-88b4-42800757dcb7__get_screenshot",
+      "mcp__f557a916-c451-4b50-88b4-42800757dcb7__get_design_context",
+      "Bash(curl -s -o section5-intro.png \"https://www.figma.com/api/mcp/asset/bb5d1124-4c10-40dd-8d18-b4c2437beac7\")",
+      "Bash(curl -s -o section6-intro.png \"https://www.figma.com/api/mcp/asset/22fc49db-c619-4c2d-b42f-46156d928375\")",
+      "Bash(wait)",
+      "Bash(curl -s -o hero-bg.png \"https://www.figma.com/api/mcp/asset/59c7ec1b-7f2a-4b7b-8c2a-e1c804716ba7\")",
+      "mcp__f557a916-c451-4b50-88b4-42800757dcb7__get_metadata",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

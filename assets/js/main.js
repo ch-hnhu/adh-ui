@@ -1,28 +1,22 @@
 /* ============================================================
    main.js — Away Digital Home
-   - Hamburger nav toggle
-   - FAQ accordion
-   - Slideshow
-   - Back-to-top
 ============================================================ */
-
 (function () {
   'use strict';
 
   /* ----------------------------------------------------------
-     HAMBURGER NAV
+     HAMBURGER NAV TOGGLE
   ---------------------------------------------------------- */
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const navMenu = document.getElementById('nav-menu');
+  var hamburgerBtn = document.getElementById('hamburger-btn');
+  var navMenu = document.getElementById('nav-menu');
 
   if (hamburgerBtn && navMenu) {
     hamburgerBtn.addEventListener('click', function () {
-      const isOpen = navMenu.classList.toggle('nav__menu--open');
+      var isOpen = navMenu.classList.toggle('nav__menu--open');
       hamburgerBtn.classList.toggle('nav__hamburger--active', isOpen);
       hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
     });
 
-    // Close menu when a link is clicked
     navMenu.querySelectorAll('.nav__link, .nav__cta').forEach(function (link) {
       link.addEventListener('click', function () {
         navMenu.classList.remove('nav__menu--open');
@@ -33,54 +27,74 @@
   }
 
   /* ----------------------------------------------------------
+     SLIDESHOW — static 3-up display (portrait | main video | portrait)
+     Navigation buttons cycle through alternative views on smaller screens.
+  ---------------------------------------------------------- */
+  var slidePrev = document.getElementById('slide-prev');
+  var slideNext = document.getElementById('slide-next');
+  var slideTrack = document.getElementById('slideshow-track');
+
+  if (slidePrev && slideNext && slideTrack) {
+    /* On large screens the layout is static — buttons hidden unless needed */
+    function updateSlideButtons() {
+      var hidden = window.innerWidth > 900;
+      slidePrev.style.opacity = hidden ? '0' : '1';
+      slideNext.style.opacity = hidden ? '0' : '1';
+      slidePrev.style.pointerEvents = hidden ? 'none' : 'auto';
+      slideNext.style.pointerEvents = hidden ? 'none' : 'auto';
+    }
+    updateSlideButtons();
+    window.addEventListener('resize', updateSlideButtons);
+  }
+
+  /* ----------------------------------------------------------
      FAQ ACCORDION
   ---------------------------------------------------------- */
-  const faqItems = document.querySelectorAll('.faq__item');
-
-  faqItems.forEach(function (item) {
-    const btn = item.querySelector('.faq__question');
-    const answer = item.querySelector('.faq__answer');
-    const icon = item.querySelector('.faq__icon');
+  document.querySelectorAll('.faq__item').forEach(function (item) {
+    var btn    = item.querySelector('.faq__question');
+    var answer = item.querySelector('.faq__answer');
+    var icon   = item.querySelector('.faq__icon');
 
     if (!btn || !answer) return;
 
     btn.addEventListener('click', function () {
-      const isOpen = item.classList.toggle('faq__item--open');
+      var isOpen = item.classList.toggle('faq__item--open');
       btn.setAttribute('aria-expanded', String(isOpen));
       if (icon) {
-        icon.src = isOpen ? 'assets/icon-minus.png' : 'assets/icon-plus.png';
+        if (isOpen) {
+          icon.classList.remove('faq__icon--plus');
+          icon.classList.add('faq__icon--minus');
+        } else {
+          icon.classList.remove('faq__icon--minus');
+          icon.classList.add('faq__icon--plus');
+        }
       }
     });
   });
 
   /* ----------------------------------------------------------
-     SLIDESHOW
+     TESTIMONIAL — PLAY BUTTON
   ---------------------------------------------------------- */
-  const track = document.getElementById('slideshow-track');
-  const prevBtn = document.getElementById('slide-prev');
-  const nextBtn = document.getElementById('slide-next');
+  var testimonialPlaceholder = document.getElementById('testimonial-placeholder');
+  var testimonialPlayBtn     = document.getElementById('testimonial-play-btn');
+  var testimonialVideo       = document.getElementById('testimonial-video');
 
-  if (track && prevBtn && nextBtn) {
-    const slides = track.querySelectorAll('.slideshow__slide');
-    const total = slides.length;
-    let current = 0;
-
-    function goTo(index) {
-      current = (index + total) % total;
-      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+  if (testimonialPlayBtn && testimonialPlaceholder && testimonialVideo) {
+    function showTestimonialVideo() {
+      testimonialPlaceholder.style.display = 'none';
+      testimonialVideo.style.display = 'block';
+      testimonialVideo.play();
     }
-
-    prevBtn.addEventListener('click', function () { goTo(current - 1); });
-    nextBtn.addEventListener('click', function () { goTo(current + 1); });
+    testimonialPlayBtn.addEventListener('click', showTestimonialVideo);
+    testimonialPlaceholder.addEventListener('click', showTestimonialVideo);
   }
 
   /* ----------------------------------------------------------
      BACK TO TOP
   ---------------------------------------------------------- */
-  const backToTopBtn = document.getElementById('back-to-top');
-
-  if (backToTopBtn) {
-    backToTopBtn.addEventListener('click', function () {
+  var backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    backToTop.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
